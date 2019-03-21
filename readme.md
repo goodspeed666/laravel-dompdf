@@ -34,7 +34,7 @@ To change the configuration, copy the config file to your config folder and enab
   
 ## Using
 
-You can create a new DOMPDF instance and load a HTML string, file or view name. You can save it to a file, or stream (show in browser) or download.
+You can create a new DOMPDF instance and load a HTML string, file or view name. You can save it to a file, or stream (show in browser) or download. In lumen, `App::make()` should be `app()->make()`.
 
     $pdf = App::make('dompdf.wrapper');
     $pdf->loadHTML('<h1>Test</h1>');
